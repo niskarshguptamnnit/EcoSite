@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container my-2">
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/image/3.jpg" class="d-block" alt="..." style="width: 2000px; height: 650px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 CLASS="text-center">WATER POLLUTION</h5>
+          <p>The ocean is polluted by 171 trillion plastic particles and millions of tons of dredged material containing
+            heavy metals. These substances, a combination of plastic, industrial waste, sewage, and other debris,
+            accumulate in marine ecosystems and threaten wildlife and human health.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/image/2.jpg" class="d-block" alt="..." style="width: 2000px; height: 650px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 CLASS="text-center">FOREST FIRE</h5>
+          <p>In 2023, for example, about 12 million hectares of tree cover were lost to fires, and by 2024, this figure
+            increased to at least 13.5 million hectares, an area roughly the size of Greece. </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/image/1.jpg" class="d-block" alt="..." style="width: 2000px; height: 650px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 CLASS="text-center">DEFORESTATION</h5>
+          <p>Deforestation rates are higher than losses from forest fires, with roughly 10 million hectares of forest
+            cleared annually for logging, agriculture, and urbanization, leading to an estimated 15 billion trees cut
+            down each year.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<h2 CLASS="text-center">WATER POLLUTION</h2>
+<P>Water pollution is the contamination of water bodies by foreign substances like industrial waste, agricultural
+  runoff, and sewage, rendering the water harmful to human health and aquatic life. This pollution harms ecosystems,
+  depletes clean water resources, and causes diseases such as cholera and typhoid. Addressing this global issue requires
+  responsible waste management, the implementation of strict regulations, and widespread public education to protect our
+  essential water resources. </P>
+
+<h2 CLASS="text-center my-4">FOREST FIRE</h2>
+<P>A forest fire is an uncontrolled blaze consuming vegetation in a natural environment, ignited by natural causes like
+  lightning or human activities such as discarded cigarettes or arson. These fires, often exacerbated by dry conditions,
+  can range from ground fires to crown fires, spreading rapidly with high winds and topography. While fire is a natural
+  part of some ecosystems, uncontrolled wildfires pose severe environmental and economic threats, destroying habitats,
+  releasing pollutants contributing to climate change, and causing widespread property damage and community disruption.
+</P>
+
+<h2 CLASS="text-center my-4">DEFORESTATION</h2>
+<P>Deforestation is the large-scale cutting down and removal of forests for purposes such as agriculture, urbanization,
+  or industry, leading to significant environmental damage including habitat loss, increased carbon emissions, soil
+  erosion, and disruptions to the water cycle. This process severely impacts biodiversity, displacing wildlife and
+  threatening plant species with extinction. To combat this global issue, solutions include planting more trees
+  (afforestation/reforestation), enforcing stricter laws against illegal logging, promoting sustainable land management,
+  and raising public awareness about the vital ecological role of forests. </P>
+{% endblock body %}

@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container my-2">
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/image/5.jpg" class="d-block" alt="..." style="width: 2000px; height: 650px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>VOLCANIC ERRUPTION</h5>
+                    <p>There are an average of 50 TO 70 volcanic eruptions per year, with the Global Volcanism Program
+                        (GVP) tracking confirmed eruptions, such as the 58 from 56 volcanoes in 2025</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/image/4.jpg" class="d-block" alt="..." style="width: 2000px; height: 650px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>FLOOD</h5>
+                    <p>Globally, an estimated 1.47 billion people face a significant risk of flooding, with this number
+                        increasing due to climate change. In the period of 2008 TO 2017, floods were the most frequent
+                        natural hazard, affecting about 730 million people. </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/image/6.jpg" class="d-block" alt="..." style="width: 2000px; height: 650px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>HURRICANES</h5>
+                    <p>Globally, an estimated 560 million people are exposed to tropical cyclones (including hurricanes)
+                        annually, with this number increasing from 408 million in 2002 to 792 million in 2019. While
+                        deaths from tropical cyclones 779,324 people have been killed by them in the last 50 years.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<h2 CLASS="text-center">FLOOD</h2>
+<P>Flooding injures, kills, displaces people, and causes extensive property damage and infrastructure failure. To
+    survive a flood, move to higher ground, avoid all floodwater, and follow local authorities' guidance. Key survival
+    steps include never walking or driving through flowing water, securing your home by moving valuables and turning off
+    utilities, staying informed through media and official sources, and taking care of health by avoiding contaminated
+    water and seeking medical attention for any illness.
+    How floods affect people
+    Injury and Death:
+    People can be injured or killed by swift-moving floodwater, falling debris, or electrical hazards.
+    Displacement and Loss of Property:
+    Homes and businesses are often damaged or destroyed, leading to grief, sadness, and long-term difficulties in
+    repairing or relocating.
+    Health Risks:
+    Floodwater is often contaminated with sewage, increasing the risk of water-borne illnesses like cholera and typhoid.
+    Infrastructure Disruption:
+    Flooding can damage roads, bridges, power lines, and water systems, disrupting essential services. </P>
+
+<h2 CLASS="text-center my-4">HURRICANES OR TORNADO</h2>
+<P>To protect yourself from a hurricane, you should evacuate if ordered by authorities, but if staying home, move to an
+    interior room on the lowest floor, away from windows and glass. During the storm, do not drive or walk through
+    floodwaters, stay informed by listening to a battery-operated radio, and do not go outside during the calm eye of
+    the storm. After the hurricane, be aware of dangers like downed power lines and unstable structures, and do not
+    return home until it is declared safe by officials.
+</P>
+
+<h2 CLASS="text-center my-4">VOLCANIC ERRUPTION</h2>
+<P>To protect yourself from a volcanic eruption, prepare an emergency kit and evacuation plan, stay informed about
+    alerts from authorities, and follow evacuation orders if given. During an eruption, avoid areas downwind or in river
+    valleys, shelter indoors by sealing windows and doors to keep out ash, and wear a mask and goggles if you must go
+    outside. After an eruption, avoid driving in heavy ash, protect your skin and eyes, and be cautious of mudflows
+    called lahars. </P>
+{% endblock body %}

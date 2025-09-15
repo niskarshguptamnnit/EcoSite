@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+      
+    
+  </style>
+</head>
+<body>
+
+  <h2 CLASS="text-center">Multiple Answer Quiz</h2>
+
+  <form id="quizForm">
+
+    <div class="question my-4">
+      <h3>1- WHO CONVERT THE MOST AMOUNT OF CO2 INTO OXYGEN IN OUR ENVIRONMENT</h3>
+      <div class="answers">
+        <label><input type="checkbox" name="q1" value="a"> PHYTOPLANKTON</label>
+        <label><input type="checkbox" name="q1" value="b"> TREES</label>
+        <label><input type="checkbox" name="q1" value="c"> ANIMALS</label>
+        <label><input type="checkbox" name="q1" value="d"> HUMANS</label>
+      </div>
+    </div>
+
+    <div class="question my-4">
+      <h3>2. HOW TO TACKEL LANDSLIDE?</h3>
+      <div class="answers">
+        <label><input type="checkbox" name="q2" value="a"> BY PLANTING TREES ON SLOPE AREAS</label>
+        <label><input type="checkbox" name="q2" value="b"> BY CUTTING TREES ON SLOPE AREAS</label>
+        <label><input type="checkbox" name="q2" value="c"> BY REMOVING SOIL FROM SLOPE</label>
+        <label><input type="checkbox" name="q2" value="d"> BY REMOVING GRASS FROM SLOPE</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h3>3. HOW TO survive A SEA STROM?</h3>
+      <div class="answers">
+        <label><input type="checkbox" name="q3" value="a"> BY WALKING NEAR COSTAL LINE</label>
+        <label><input type="checkbox" name="q3" value="b"> BY WALKING AWAY FROM BEACH</label>
+        <label><input type="checkbox" name="q3" value="c"> BY SWIMMING IN OCEAN</label>
+        <label><input type="checkbox" name="q3" value="d"> BY DOING NOTHING</label>
+      </div>
+    </div>
+
+    <button type="button" onclick="checkAnswers()">Submit</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    function checkAnswers() {
+      const correctAnswers = {
+        q1: ['a'],       // Python, Java
+        q2: ['a'],       // Apple, Banana
+        q3: ['b']   // <div>, <span>, <section>
+      };
+
+      let score = 0;
+
+      for (let q in correctAnswers) {
+        const selected = Array.from(document.querySelectorAll(`input[name="${q}"]:checked`))
+                              .map(cb => cb.value)
+                              .sort();
+        const correct = correctAnswers[q].slice().sort();
+
+        if (JSON.stringify(selected) === JSON.stringify(correct)) {
+          score++;
+        }
+      }
+
+      document.getElementById("result").innerText = `You scored ${score}/3`;
+    }
+  </script>
+
+
+
+{% endblock body %}
